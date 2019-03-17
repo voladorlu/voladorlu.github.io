@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Ph.D. Stu@Computer Science">
+  <meta name="description" content="Recommender systems, which can significantly help users find their interested items from the informa- tion era, has attracted an increasing attention from both the scientific and application society. One of the widest applied recommendation methods is the Matrix Factorization (MF). However, most of MF based approaches focus on the user-item rating matrix, but ignoring the ingredients which may have significant influence on users’ preferences on items. In this paper, we propose a multi-linear interactive MF algo- rithm (MLIMF) to model the interactions between the users and each event associated with their final decisions. Our model considers not only the user-item rating information but also the pairwise interac- tions based on some empirically supported factors. In addition, we compared the proposed model with three typical other methods: user-based collaborative filtering (UCF), item-based collaborative filtering (ICF) and regularized MF (RMF). Experimental results on two real-world datasets, MovieLens 1M and MovieLens 100k, show that our method performs much better than other three methods in the accuracy of recommendation. This work may shed some light on the in-depth understanding of modeling user online behaviors and the consequent decisions.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://voladorlu.github.io/authors/ga-cushen/">
+  <link rel="alternate" hreflang="en-us" href="https://voladorlu.github.io/publication/rating-estimation/">
 
   
 
@@ -98,15 +98,15 @@
   
 
   
-  <link rel="alternate" href="https://voladorlu.github.io/authors/ga-cushen/index.xml" type="application/rss+xml" title="Lu (Jason) Yu&#39;s Homepage">
-  <link rel="feed" href="https://voladorlu.github.io/authors/ga-cushen/index.xml" type="application/rss+xml" title="Lu (Jason) Yu&#39;s Homepage">
+  <link rel="alternate" href="https://voladorlu.github.io/index.xml" type="application/rss+xml" title="Lu (Jason) Yu&#39;s Homepage">
+  <link rel="feed" href="https://voladorlu.github.io/index.xml" type="application/rss+xml" title="Lu (Jason) Yu&#39;s Homepage">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://voladorlu.github.io/authors/ga-cushen/">
+  <link rel="canonical" href="https://voladorlu.github.io/publication/rating-estimation/">
 
   
   
@@ -118,19 +118,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Lu (Jason) Yu&#39;s Homepage">
-  <meta property="og:url" content="https://voladorlu.github.io/authors/ga-cushen/">
-  <meta property="og:title" content="GA Cushen | Lu (Jason) Yu&#39;s Homepage">
-  <meta property="og:description" content="Ph.D. Stu@Computer Science"><meta property="og:image" content="https://voladorlu.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://voladorlu.github.io/publication/rating-estimation/">
+  <meta property="og:title" content="Multi-linear interactive matrix factorization | Lu (Jason) Yu&#39;s Homepage">
+  <meta property="og:description" content="Recommender systems, which can significantly help users find their interested items from the informa- tion era, has attracted an increasing attention from both the scientific and application society. One of the widest applied recommendation methods is the Matrix Factorization (MF). However, most of MF based approaches focus on the user-item rating matrix, but ignoring the ingredients which may have significant influence on users’ preferences on items. In this paper, we propose a multi-linear interactive MF algo- rithm (MLIMF) to model the interactions between the users and each event associated with their final decisions. Our model considers not only the user-item rating information but also the pairwise interac- tions based on some empirically supported factors. In addition, we compared the proposed model with three typical other methods: user-based collaborative filtering (UCF), item-based collaborative filtering (ICF) and regularized MF (RMF). Experimental results on two real-world datasets, MovieLens 1M and MovieLens 100k, show that our method performs much better than other three methods in the accuracy of recommendation. This work may shed some light on the in-depth understanding of modeling user online behaviors and the consequent decisions."><meta property="og:image" content="https://voladorlu.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2015-09-01T00:00:00&#43;03:00">
+  <meta property="article:published_time" content="2019-03-17T14:23:52&#43;03:00">
+  
+  <meta property="article:modified_time" content="2019-03-17T14:23:52&#43;03:00">
   
 
   
 
   
 
-  <title>GA Cushen | Lu (Jason) Yu&#39;s Homepage</title>
+  <title>Multi-linear interactive matrix factorization | Lu (Jason) Yu&#39;s Homepage</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -308,38 +310,295 @@
   </div>
 </nav>
 
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
 
 
 
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">GA Cushen</h1>
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Multi-linear interactive matrix factorization</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2019-03-17 14:23:52 &#43;0300 AST" itemprop="datePublished">
+<meta content="2019-03-17 14:23:52 &#43;0300 AST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/lu-yu/" style='color:#004c40'>Lu Yu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/ge-zhou/" style='color:#004c40'>Ge Zhou</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/chuang-liu/" style='color:#004c40'>Chuang Liu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/zi-ke-zhang/" style='color:#004c40'>Zi-Ke Zhang</a></span></span>
+  
+
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>March 2019</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Multi-linear%20interactive%20matrix%20factorization&amp;url=https%3a%2f%2fvoladorlu.github.io%2fpublication%2frating-estimation%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fvoladorlu.github.io%2fpublication%2frating-estimation%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fvoladorlu.github.io%2fpublication%2frating-estimation%2f&amp;title=Multi-linear%20interactive%20matrix%20factorization"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fvoladorlu.github.io%2fpublication%2frating-estimation%2f&amp;title=Multi-linear%20interactive%20matrix%20factorization"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Multi-linear%20interactive%20matrix%20factorization&amp;body=https%3a%2f%2fvoladorlu.github.io%2fpublication%2frating-estimation%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 
 
-<section id="about" class="pt-5">
-  <div class="container">
+  
+
+</div>
+
     
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+  
     
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/1404.1653.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
     
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Recommender systems, which can significantly help users find their interested items from the informa- tion era, has attracted an increasing attention from both the scientific and application society. One of the widest applied recommendation methods is the Matrix Factorization (MF). However, most of MF based approaches focus on the user-item rating matrix, but ignoring the ingredients which may have significant influence on users’ preferences on items. In this paper, we propose a multi-linear interactive MF algo- rithm (MLIMF) to model the interactions between the users and each event associated with their final decisions. Our model considers not only the user-item rating information but also the pairwise interac- tions based on some empirically supported factors. In addition, we compared the proposed model with three typical other methods: user-based collaborative filtering (UCF), item-based collaborative filtering (ICF) and regularized MF (RMF). Experimental results on two real-world datasets, MovieLens 1M and MovieLens 100k, show that our method performs much better than other three methods in the accuracy of recommendation. This work may shed some light on the in-depth understanding of modeling user online behaviors and the consequent decisions.</p>
     
 
     
-    
-    
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Latest</h3>
-      <ul>
-        
-        <li>
-          <a href="/publication/person-re-id/">A Person Re-Identification System For Mobile Devices</a>
-        </li>
-        
-      </ul>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+
+            
+            
+            <a href="/publication/#2">
+              Journal article
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>Knowledge-Based Systems</em>, Elsevier.</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"><!-- 
+<div class="alert alert-note">
+  <div>
+    <p>Quickly discover relevant content by <a href="https://voladorlu.github.io/publication/" target="_blank">filtering publications</a>.</p>
+
   </div>
+</div>
+ -->
+</div>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
   
-</section>
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
 
 
 <div class="container">
