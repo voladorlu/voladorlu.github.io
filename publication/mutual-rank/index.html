@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Ph.D. Stu@Computer Science">
+  <meta name="description" content="Previous works indicated that pairwise methods are state-of- the-art approaches to fit users’ taste from implicit feedback. In this paper, we argue that constructing item pairwise samples for a fixed user is insufficient, because taste differences between two users with respect to a same item can not be explicitly distinguished. Moreover, the rank position of positive items are not used as a metric to measure the learning magnitude in the next step. Therefore, we firstly define a confidence function to dynamically control the learning step-size for updating model parameters. Sequently, we introduce a generic way to construct mutual pairwise loss from both users’ and items’ perspective. Instead of user-oriented pairwise sampling strategy alone, we incorporate item pairwise samples into a popular pairwise learning framework, bayesian personalized ranking (BPR), and propose mutual bayesian personalized ranking (MBPR) method. In addition, a rank-aware adaptively sampling strategy is proposed to come up with the final approach, called RankMBPR. Empirical studies are carried out on four real-world datasets, and experimental results in several metrics demonstrate the efficiency and effectiveness of our proposed method, comparing with other baseline algorithms.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://voladorlu.github.io/authors/admin/">
+  <link rel="alternate" hreflang="en-us" href="https://voladorlu.github.io/publication/mutual-rank/">
 
   
 
@@ -98,15 +98,15 @@
   
 
   
-  <link rel="alternate" href="https://voladorlu.github.io/authors/admin/index.xml" type="application/rss+xml" title="Lu (Jason) Yu&#39;s Homepage">
-  <link rel="feed" href="https://voladorlu.github.io/authors/admin/index.xml" type="application/rss+xml" title="Lu (Jason) Yu&#39;s Homepage">
+  <link rel="alternate" href="https://voladorlu.github.io/index.xml" type="application/rss+xml" title="Lu (Jason) Yu&#39;s Homepage">
+  <link rel="feed" href="https://voladorlu.github.io/index.xml" type="application/rss+xml" title="Lu (Jason) Yu&#39;s Homepage">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://voladorlu.github.io/authors/admin/">
+  <link rel="canonical" href="https://voladorlu.github.io/publication/mutual-rank/">
 
   
   
@@ -118,19 +118,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Lu (Jason) Yu&#39;s Homepage">
-  <meta property="og:url" content="https://voladorlu.github.io/authors/admin/">
-  <meta property="og:title" content="admin | Lu (Jason) Yu&#39;s Homepage">
-  <meta property="og:description" content="Ph.D. Stu@Computer Science"><meta property="og:image" content="https://voladorlu.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://voladorlu.github.io/publication/mutual-rank/">
+  <meta property="og:title" content="RankMBPR: Rank-aware Mutual Bayesian Personalized Ranking for Item Recommendation | Lu (Jason) Yu&#39;s Homepage">
+  <meta property="og:description" content="Previous works indicated that pairwise methods are state-of- the-art approaches to fit users’ taste from implicit feedback. In this paper, we argue that constructing item pairwise samples for a fixed user is insufficient, because taste differences between two users with respect to a same item can not be explicitly distinguished. Moreover, the rank position of positive items are not used as a metric to measure the learning magnitude in the next step. Therefore, we firstly define a confidence function to dynamically control the learning step-size for updating model parameters. Sequently, we introduce a generic way to construct mutual pairwise loss from both users’ and items’ perspective. Instead of user-oriented pairwise sampling strategy alone, we incorporate item pairwise samples into a popular pairwise learning framework, bayesian personalized ranking (BPR), and propose mutual bayesian personalized ranking (MBPR) method. In addition, a rank-aware adaptively sampling strategy is proposed to come up with the final approach, called RankMBPR. Empirical studies are carried out on four real-world datasets, and experimental results in several metrics demonstrate the efficiency and effectiveness of our proposed method, comparing with other baseline algorithms."><meta property="og:image" content="https://voladorlu.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2016-06-17T14:23:52&#43;03:00">
   
+  <meta property="article:modified_time" content="2016-06-17T14:23:52&#43;03:00">
+  
+
   
 
   
 
-  
-
-  <title>admin | Lu (Jason) Yu&#39;s Homepage</title>
+  <title>RankMBPR: Rank-aware Mutual Bayesian Personalized Ranking for Item Recommendation | Lu (Jason) Yu&#39;s Homepage</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -308,17 +310,169 @@
   </div>
 </nav>
 
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
 
 
 
 
-<section id="about" class="pt-5">
-  <div class="container">
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">RankMBPR: Rank-aware Mutual Bayesian Personalized Ranking for Item Recommendation</h1>
+
+  
+
+  
     
+
+
+
+<meta content="2016-06-17 14:23:52 &#43;0300 AST" itemprop="datePublished">
+<meta content="2016-06-17 14:23:52 &#43;0300 AST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
     
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/stronglu-yu/strong/" style='color:#004c40'><strong>Lu Yu</strong></a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/ge-zhou/" style='color:#004c40'>Ge Zhou</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/chuxu-zhang/" style='color:#004c40'>Chuxu Zhang</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/junming-huang/" style='color:#004c40'>Junming Huang</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/chuang-liu/" style='color:#004c40'>Chuang Liu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/zi-ke-zhang/" style='color:#004c40'>Zi-Ke Zhang</a></span></span>
+  
+
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
     
     
       
+    
+    <time>June 2016</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=RankMBPR%3a%20Rank-aware%20Mutual%20Bayesian%20Personalized%20Ranking%20for%20Item%20Recommendation&amp;url=https%3a%2f%2fvoladorlu.github.io%2fpublication%2fmutual-rank%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fvoladorlu.github.io%2fpublication%2fmutual-rank%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fvoladorlu.github.io%2fpublication%2fmutual-rank%2f&amp;title=RankMBPR%3a%20Rank-aware%20Mutual%20Bayesian%20Personalized%20Ranking%20for%20Item%20Recommendation"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fvoladorlu.github.io%2fpublication%2fmutual-rank%2f&amp;title=RankMBPR%3a%20Rank-aware%20Mutual%20Bayesian%20Personalized%20Ranking%20for%20Item%20Recommendation"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=RankMBPR%3a%20Rank-aware%20Mutual%20Bayesian%20Personalized%20Ranking%20for%20Item%20Recommendation&amp;body=https%3a%2f%2fvoladorlu.github.io%2fpublication%2fmutual-rank%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
 
 
 
@@ -332,173 +486,133 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
 
-      
-      
-      <img class="portrait" src="/author/admin/avatar_hu1e942caa4e34bb73d0fca7ff54785e52_118999_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
-      
 
-      <div class="portrait-title">
-        <h2 itemprop="name">Lu Yu</h2>
-        <h3 itemprop="jobTitle">Ph.D. Stu@Computer Science</h3>
 
-        
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          
-          <span itemprop="name">King Abdullah University of Science and Technology (KAUST)</span>
-          
-        </h3>
-        
-      </div>
 
-      <link itemprop="url" href="">
 
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="/#contact" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
-            <i class="fab fa-twitter big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://github.com/gcushen" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
 
-    </div>
-  </div>
-  <div class="col-12 col-lg-8" itemprop="description">
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="http://www.junminghuang.com/WAIM2016-yu.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
 
     
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Previous works indicated that pairwise methods are state-of- the-art approaches to fit users’ taste from implicit feedback. In this paper, we argue that constructing item pairwise samples for a fixed user is insufficient, because taste differences between two users with respect to a same item can not be explicitly distinguished. Moreover, the rank position of positive items are not used as a metric to measure the learning magnitude in the next step. Therefore, we firstly define a confidence function to dynamically control the learning step-size for updating model parameters. Sequently, we introduce a generic way to construct mutual pairwise loss from both users’ and items’ perspective. Instead of user-oriented pairwise sampling strategy alone, we incorporate item pairwise samples into a popular pairwise learning framework, bayesian personalized ranking (BPR), and propose mutual bayesian personalized ranking (MBPR) method. In addition, a rank-aware adaptively sampling strategy is proposed to come up with the final approach, called RankMBPR. Empirical studies are carried out on four real-world datasets, and experimental results in several metrics demonstrate the efficiency and effectiveness of our proposed method, comparing with other baseline algorithms.</p>
     
 
-    <p>Lu Yu is a third-year Ph.D. student in <a href="https://www.kaust.edu.sa" target="_blank">King Abdullah University of Science and Technology (KAUST)</a>, under the supervision of Prof. Xiangliang Zhang leading the <a href="https://mine.kaust.edu.sa" target="_blank">MINE</a> group. Before joining KAUST, he worked as a Data Mining Engineer at Alibaba Group. He mainly works on learning representation of discrete data structure (e.g. graph, seuqence, entity) that intersected with graph theory, optimization, adversarial learning.</p>
-
-
+    
     <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
 
-      
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Stochastic Optimization</li>
-          
-          <li>Represenation Learning</li>
-          
-          <li>Recommender System</li>
-          
-          <li>Learning to Teach</li>
-          
-        </ul>
+            
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
       </div>
-      
-
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD Student of Computer Science</p>
-              <p class="institution">King Abdullah University of Science and Technology (KAUST)</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MEng in Computer Science, 2015</p>
-              <p class="institution">Hangzhou Normal University (HZNU)</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BSc in Computer Science, 2012</p>
-              <p class="institution">University of Electronic Science and Technology of China (UESTC)</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>The 17th International Conference on Web-Age Information Management</em> (Best Student Paper)</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"><!-- 
+<div class="alert alert-note">
+  <div>
+    <p>Quickly discover relevant content by <a href="https://voladorlu.github.io/publication/" target="_blank">filtering publications</a>.</p>
+
   </div>
+</div>
+ -->
 </div>
 
     
 
+
+
+
     
+
+
+
+
+
+
+  
+  
     
-    
-</section>
+  
+  
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
 
 
 <div class="container">

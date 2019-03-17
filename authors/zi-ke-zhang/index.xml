@@ -6,17 +6,17 @@
     <description>Recent content in Zi-Ke Zhang on Lu (Jason) Yu&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 14:23:52 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jun 2016 14:23:52 +0300</lastBuildDate>
     
 	<atom:link href="https://voladorlu.github.io/authors/zi-ke-zhang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Multi-linear interactive matrix factorization</title>
-      <link>https://voladorlu.github.io/publication/rating-estimation/</link>
-      <pubDate>Sun, 17 Mar 2019 14:23:52 +0300</pubDate>
+      <title>RankMBPR: Rank-aware Mutual Bayesian Personalized Ranking for Item Recommendation</title>
+      <link>https://voladorlu.github.io/publication/mutual-rank/</link>
+      <pubDate>Fri, 17 Jun 2016 14:23:52 +0300</pubDate>
       
-      <guid>https://voladorlu.github.io/publication/rating-estimation/</guid>
+      <guid>https://voladorlu.github.io/publication/mutual-rank/</guid>
       <description> Quickly discover relevant content by filtering publications.
   -- </description>
     </item>
